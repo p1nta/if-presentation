@@ -1,0 +1,14 @@
+.cache
+dist/
+.idea/
+.vscode/
+.sass-cache/
+.versions/
+node_modules/
+$RECYCLE.BIN/
+package-lock.json
+
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+.env
