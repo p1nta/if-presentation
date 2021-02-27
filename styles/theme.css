@@ -1,0 +1,174 @@
+.inline-block {
+  display: inline-block;
+}
+
+.text_left {
+  text-align: left
+}
+
+.text_right {
+  text-align: right
+}
+
+.text_center {
+  text-align: center
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.h1, h1 {
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: .2px
+}
+
+.h1, .h2, h1, h2 {
+  font-weight: 700
+}
+
+.h2, h2 {
+  font-size: 27px;
+  line-height: 1.3703703703703705;
+  letter-spacing: -.03px
+}
+
+.h3, h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: .22px
+}
+
+.h4, h4 {
+  font-size: 18px;
+  line-height: 1.3888888888888888
+}
+
+.h4, .h5, h4, h5 {
+  font-weight: 700;
+  letter-spacing: 0
+}
+
+.h5, h5 {
+  font-size: 16px;
+  line-height: 1.5
+}
+
+.h6, h6 {
+  font-size: 15px;
+  line-height: 1.3333333333333333;
+  letter-spacing: .3px
+}
+
+.h6, .h7, h6 {
+  font-weight: 600
+}
+
+.h7 {
+  font-size: 14px;
+  line-height: 1.3571428571428572;
+  letter-spacing: 0
+}
+
+.b1 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4666666666666666;
+  letter-spacing: .3px
+}
+
+.b2, b2 {
+  font-size: 14px;
+  line-height: 1.7857142857142858
+}
+
+.b2, .b3 {
+  font-weight: 400;
+  letter-spacing: .5px
+}
+
+.b3 {
+  font-size: 13px;
+  line-height: 1.5384615384615385
+}
+
+.c1 {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.3636363636363635;
+  letter-spacing: .41px
+}
+
+.c2 {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+}
+
+.s1 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.s2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* Color definition */
+
+.grey-10 {
+  color: #5C666A;
+}
+
+.grey-9 {
+  color: #8F999E;
+}
+
+.grey-8 {
+  color: #C4C8CC;
+}
+
+.grey-6 {
+  color: #D8DBDE;
+}
+
+.black {
+  color: #293033;
+}
+
+.white {
+  color: #fff;
+}
+
+.secondary {
+  color: #80ACFE;
+}
+
+/* Button styles */
+
+.button-1 {
+  transition: background-color .3s;
+
+  padding: 7.5px 15px;
+  border-radius: 2px;
+  color: white;
+  background-color: rgb(81 146 251 / 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-1:disabled {
+  background-color: rgb(81 146 251 / 0.64) !important;
+  cursor: default !important;
+}
+
+.button-1:hover, .button-1:focus, .button-1:active {
+  background-color: rgb(70 139 251 / 1);
+}

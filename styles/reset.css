@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  outline-color: #c4d8f7
+}
+
+html * ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transaprent;
+  border: none
+}
+
+html * ::-webkit-scrollbar-thumb {
+  background-color: transparent
+}
+
+a,button {
+  cursor: pointer;
+  word-break: break-word
+}
+
+:after,:before {
+  box-sizing: border-box
+}
+
+canvas {
+  user-select: none;
+  -webkit-user-select: none
+}
+
+:focus {
+  outline-width: 0
+}
+
+:focus:not(:active):not(:hover) {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px
+}
+
+input:focus,textarea:focus {
+  outline-style: none!important
+}
+
+a {
+  text-decoration: none
+}
+
+textarea {
+  resize: none
+}
+
+input,textarea {
+  -webkit-appearance: none!important;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+  font-family: inherit
+}
+
+button {
+  font-family: inherit
+}
+
+table {
+  cellspacing: 0!important;
+  border-spacing: 0!important
+}
+
+body,html {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden
+}
+
+#root {
+  height: 100%;
+  -webkit-overflow-scrolling: touch
+}
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: table
+}
+
+.intent_mouse * {
+  outline-color: transparent;
+  outline-style: none
+}
+
+.truncate_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}

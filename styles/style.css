@@ -1,0 +1,298 @@
+#root {
+  background-color: #e9edf2;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  width: 700px;
+
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(85, 94, 98, 0.12), 0px 3px 3px rgba(85, 94, 98, 0.08), 0px 1px 7px rgba(85, 94, 98, 0.06);
+  border-radius: 3px;
+
+  padding: 40px 35px;
+}
+
+.d-none {
+  display: none;
+}
+
+.shown {
+  display: block;
+
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Header section */
+
+.header-default {
+  display: block;
+  padding: 30px;
+}
+
+.header-default::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.header-default .logo {
+  width: 30px;
+  height: 30px;
+
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+/* Estimates block */
+
+.estimates-wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.estimate {
+  flex: 0 0 auto;
+}
+
+.sub-title {
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  margin-top: -5px;
+}
+
+.filler {
+  position: relative;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.flight-time {
+  margin-bottom: 10px;
+}
+
+.plane {
+  position: relative;
+  z-index: 1;
+}
+
+.plane rect {
+  background-color: #fff;
+}
+
+.line {
+  position: absolute;
+  bottom: 21px;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  background-color: #CDD1D5;
+}
+
+.line::before, .line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  background-color: #CDD1D5;
+  border-radius: 50%;
+}
+
+.line::after {
+  left: auto;
+  right: 0;
+}
+
+/* Footer block */
+.footer-default {
+  padding: 25px 20px;
+}
+
+.footer-controls {
+  padding: 15px 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.confirm-rules {
+  flex: 1 1 auto;
+  padding-right: 90px;
+  font-size: 0;
+}
+
+.confirm-btn {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/* Billing form */
+
+.billing-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #EAEDF2;
+}
+
+.bill-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 380px;
+  height: 180px;
+  border-radius: 5px;
+  background-color: #FBFCFD;
+
+  padding: 20px;
+  /* To support inline-block positioning */
+  font-size: 0px;
+}
+
+.bill-data .title {
+  display: inline-block;
+  width: 70%;
+  padding-right: 30px;
+}
+
+.bill-data .value {
+  display: inline-block;
+  width: 30%;
+}
+
+.price-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.cc-data {
+  flex: 1 1 auto;
+  padding-right: 30px;
+}
+
+.card-item {
+  margin-top: 15px;
+}
+
+.fake-input {
+  padding: 7.5px 10px;
+  border: 1px solid #E3E6E8;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.item-value {
+  font-size: 0px;
+  position: relative;
+}
+
+.mastercard {
+  position: absolute;
+  top: 7.5px;
+  right: 10px;
+}
+
+.expiration-date, .cvv {
+  display: inline-block;
+}
+
+.expiration-date {
+  width: 70%;
+  padding-right: 15px;
+}
+
+.cvv {
+  width: 30%;
+  text-align: center;
+}
+
+/* Finalised modals */
+
+.completion-container {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.completion-container .logo {
+  margin-bottom: 70px;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  margin-bottom: 65px;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #689FFD;
+  border-radius: 2px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #80ACFE;
+  text-align: center;
+}
+
+input[type="checkbox"]:checked + label img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+
+input[type="checkbox"]:not(:checked) + label img {
+  display: none;
+}
+
+.label {
+  padding: 3px 0 3px 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
